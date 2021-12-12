@@ -144,7 +144,7 @@ app.post('/api/send', function(req, res) {
           res.send({success: false, message: err.toString(), data: null});
         } else {
           // res.send({success: true, message: 'Transaction was sent sucessfully. Transaction hash: ' + result1 + '', data: null});
-          res.send({success: true, message: "Transaction was sent sucessfully. Transaction hash: <a href='https://ropsten.etherscan.io/tx/" + result1 + "'>Link</a>", data: null});
+          res.send({success: true, message: "Transaction was sent sucessfully. Transaction hash: https://ropsten.etherscan.io/tx/" + result1 + "", data: null});
         }
       });
     }
